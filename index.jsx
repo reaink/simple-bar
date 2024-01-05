@@ -34,12 +34,7 @@ import * as Settings from "./lib/settings";
 const refreshFrequency = false;
 
 const settings = Settings.get();
-const {
-  yabaiPath = "/usr/local/bin/yabai",
-  shell,
-  enableServer,
-  yabaiServerRefresh,
-} = settings.global;
+const { yabaiPath = "/opt/homebrew/bin/yabai", shell, enableServer, yabaiServerRefresh } = settings.global;
 const { hideWindowTitle, displayOnlyIcon, displaySkhdMode } = settings.process;
 
 const disableSignals = enableServer && yabaiServerRefresh;
